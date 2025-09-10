@@ -136,7 +136,90 @@ class="border border-gray-200 py-2 mt-1.5 rounded-sm font-bold"
     </section>
 
     <!--Category Section -->
+<section class="bg-[#F0FD4] pt-6 md:pt-12">
+  <h1
+  class="hidden xl:flex text-center text-2xl md:text-4xl mb-10 text-[#1F2937] font-bold items-center justify-center gap-4">
+  Choose Your Trees </h1>
+  <div
+  class="hidden xl:flex text-center text-2xl md:text-4xl mb-10 text-[#1F2937] font-bold items-center justify-center gap-4">
+  <aside class="hidden xl:block w-[220px] shrink-0">
+    <div>
+      <h2 class="font-bold text-2xl">Categories</h2>
+      <ul class="all-category mt-2 space-y-1.5">
+        <!--Category will fetch here from js -->
+      </ul>
+    </div>
+  </aside>
+   <main class="flex-1">
+    <div class="card-container grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-3 xl:max-h-[960px] overflow-y-auto">
+      <!--Plants card will show here -->
+    </div>
+   </main>
+
+   <!--dropdownn category for mobile -->
+
+   <div class="xl:hidden">
+    <div class="text-center">
+      <button class="category-btn btn bg-[#15803D] text-white rounded-sm">
+        Choose Category 
+        <i class="fa-solid fa-chevron-down rotate-180 arrow-down"></i>
+      </button>
+
+    </div>
+    <!--Sub dropdown -->
+    <ul class="max-h-[0px] w-full overflow-hidden mobile-all-category flex flex-wrap justify-center items-center gap-1.5 mt-3 transition-all duration-300">
+      <!--Category will fetch here from js -->
+    </ul>
+   </div>
 
 
+   <div class="w-full xl:w-[240px] shrink-0">
+    <div class="bg-white rounded-lg p-3 w-full h-full">
+      <h1 class="text-2xl flex justify-between items-center">Your Cart<span class="total-cart text-gray-950 text-base">0</span></h1> 
+      <div class="cart-container mt-2.5 pb-3 space-y-3 border-b border-gray-200">
+        <!--addToCard will show Here from js -->
+      </div>
+      <div class="flex justify-between items-center p-3">
+        <h1 class="font-medium">Total:</h1>
+        <p class="font-medium">$ <span class="total-price"></span> </p>
+      </div>
+    </div>
+   </div>
+   </div>
+   </section>
+   <!--About Section --> 
+   <section class="bg-[#F0FDF4] py-10 md:py-20">
+    <h1 class="text-center text-2xl md:text-4xl mb-10 text-[#1F2937] font-bold">
+      About the Campaign
+    </h1>
+    <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-center px-4 md:px-16 lg:px-24 gap-5 md:gap-0">
+      <div class="flex-1 flex items-center justify-center">
+        <img class="w-full md:w-7/10 shadow-lg rounded-lg"
+        src="./assets/about.png"
+        alt=""
+        />
+      </div>
+      <div class="flex-1">
+        <p class="text-[#1F2937]/80 text-base leading-6 max-w-[80%]">
+            -- Green Earth is a global tree plantation initiative dedicated to
+            fighting climate change. Since our start, we’ve planted over 500,000
+            trees worldwide. By joining our campaign, you help restore forests,
+            create habitats for wildlife, and combat global warming.
+        </p>
+        <ul class="mt-5">
+          <li class="list-disc ml-5 text-sm">
+             Restoration of natural habitats
+          </li>
+          <li class="list-disc ml-5 text-sm">Improvement of air quality </li>
+          <li class="list-disc ml-5 text-sm">
+             Support for local communities
+          </li>
+        </ul>
+      </div>
+    </div>
+   </section>
+
+   
+   <!-- Our Impact Section -->
 </body>
 </html>
